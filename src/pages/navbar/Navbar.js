@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { ShowOnLogin, ShowOnLogout } from "../../components/protect/HiddenLink";
 
 const Navbar = () => {
   return (
@@ -20,13 +21,19 @@ const Navbar = () => {
         <Link to="/">Movies</Link>
         <Link to="/">TV Shows</Link>
         <Link to="/">Celebrities</Link>
+        <ShowOnLogout>
         <Link to="/register">Register</Link>
+        </ShowOnLogout>
+        <ShowOnLogout>
         <button className="--btn --btn-primary">
           <Link to="/login">Login</Link>
         </button>
+        </ShowOnLogout>
+        <ShowOnLogin>
         <button className="--btn --btn-primary">
           <Link to="/dashboard">Dashboard</Link>
         </button>
+        </ShowOnLogin>
       </div>
     </nav>
   );
