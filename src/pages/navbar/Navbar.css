@@ -1,0 +1,60 @@
+/* Navbar.css */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	background-color: #121212;
+	padding: 10px 20px;
+	color: white;
+  }
+  
+  .navbar__logo img {
+	width: 60px;
+  }
+  
+  .navbar__search {
+	flex: 1;
+	margin-left: 20px;
+  }
+  
+  .navbar__search input {
+	width: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+  }
+  
+  .navbar__links {
+	display: flex;
+	align-items: center;
+  }
+  
+  .navbar__links a {
+	color: white;
+	text-decoration: none;
+	margin-left: 20px; /* Only links will have margin-left */
+	font-size: 14px;
+	font-weight: bold;
+	transition: color 0.3s ease;
+  }
+  
+  .navbar__links button {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	/* background-color: #f5c518; */
+	padding: 6px 12px;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	margin-left: 0; /* No margin-left for buttons */
+  }
+  
+  .navbar__links a:hover,
+  .navbar__links button:hover {
+	color: #d6621a;
+  }
+  
