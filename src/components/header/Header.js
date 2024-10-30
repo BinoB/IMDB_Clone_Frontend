@@ -20,7 +20,7 @@ const Header = () => {
 		<div className="heading">
 			<h1 className='h-font'>
 				<span className='welcome-text'>Welcome to&nbsp;</span>
-				<span className="brand-name">{name}</span>
+				<span className="brand-name">IMDb</span>
 				<span className='welcome-text'>&nbsp;Dashboard</span>
 			</h1>
 			<button className="logout" onClick={logout}>

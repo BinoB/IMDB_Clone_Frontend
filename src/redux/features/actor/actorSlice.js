@@ -11,7 +11,7 @@ const initialState = {
   message: "",
   totalExpenseValue: 0,
   category: [],
-};
+}; 
 
 // Create New Actor
 export const createActor = createAsyncThunk(
