@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# IMDb Clone Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the frontend application for an IMDb-like website with basic CRUD functionality for managing movies, actors, and producers. Built with React.js, it provides users with an interactive interface to view, add, edit, and delete movie records while also allowing for the dynamic creation of new actors and producers within the same view.
 
-## Available Scripts
+## Deployment
 
-In the project directory, you can run:
+The application is deployed and can be accessed at the following URL:
 
-### `npm start`
+[Deployment URL](https://poetic-blancmange-b9e3a5.netlify.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Project Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Features
+- **Movie Listing**: Display all movies with details, including the release year, producer, and actors.
+- **Add New Movie**: Add a new movie with existing actors and producers or create new ones directly within the same form.
+- **Edit Movie**: Edit movie details, including the associated actors and producer.
+- **Redux/MobX State Management**: Handles application state to optimize performance and enable seamless interactions.
+- **Responsive Design**: Ensures usability across devices with dynamic layouts.
 
-### `npm run build`
+### Bonus Features
+- **React Hooks**: Utilizes hooks for managing component logic and state.
+- **IMDb API Integration**: Optionally pulls data from the IMDb API to supplement movie information.
+- **Token-Based Authentication**: Authenticates and secures access to API endpoints.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
+- **Frontend**: React.js, Redux/MobX for state management, Axios for HTTP requests
+- **Styling**: CSS (or Chakra UI/Tailwind CSS if preferred)
+- **Backend**: Node.js and Express.js (connects to the IMDb Clone Backend)
+- **Optional**: IMDb API for movie data enrichment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup and Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/imdb-clone-frontend.git
+   cd imdb-clone-frontend
+   ```
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To install the necessary dependencies for this project, run the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+## Environment Variables
+```
+Create a `.env` file in the root directory of your project with the following variables:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```plaintext
+REACT_APP_BACKEND_URL=http://localhost:5000
+```
+## Starting the Frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To start the frontend application, run the following command:
 
-## Learn More
+```bash
+npm start
+```
+The application will run on http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Here is the folder structure of the project:
 
-### Code Splitting
+```plaintext
+src/
+├── components/          # Reusable components
+├── pages/               # Page-level components
+├── redux/               # Redux store, actions, reducers
+├── services/            # API service files for HTTP requests
+├── App.js               # Main application component
+├── index.js             # Entry point
+└── styles/              # Styling files
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+### Key Screens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Movie List:** Displays all movies with their details, including title, year of release, producer, and actors.
+- **Add/Edit Movie:** Form for adding a new movie or editing an existing one, with options to add new actors/producers directly in the form.
+- **Actor & Producer Management:** Allows users to add or edit actors and producers associated with movies.
 
-### Making a Progressive Web App
+### Key Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **MovieCard:** Displays each movie’s information.
+- **MovieForm:** Form for adding/editing movie details.
+- **ActorForm & ProducerForm:** Modal forms to add new actors or producers.
+## State Management with Redux
 
-### Advanced Configuration
+### Redux Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Slices:** Redux slices are created using Redux Toolkit for each entity (movies, actors, producers). Each slice contains actions and reducers for CRUD operations.
+- **Store Setup:** The Redux store is configured in `redux/store.js`, integrating slices for movies, actors, and producers.
 
-### Deployment
+### Actions and Reducers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Movies Slice (`redux/movies`):** Manages state for movie data, including fetching, creating, updating, and deleting movies.
+- **Actors Slice (`redux/actors`):** Manages state for actor data, handling actions to list and create actors.
+- **Producers Slice (`redux/producers`):** Manages state for producer data with similar actions.
+## Example State Structure
 
-### `npm run build` fails to minify
+Here is an example of the state structure managed by Redux:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```javascript
+{
+  movies: {
+    list: [],         // List of movies
+    loading: false,   // Loading state
+    error: null       // Error state
+  },
+  actors: {
+    list: [],
+    loading: false,
+    error: null
+  },
+  producers: {
+    list: [],
+    loading: false,
+    error: null
+  }
+}
+```
+
