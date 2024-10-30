@@ -9,7 +9,7 @@ export const validateEmail = (email) => {
 
 // Register User
 export const registerUser = async (userData) => {
-	try {const response = await axios.post(`${BACKEND_URL}/api/users/register`,userData,{withCredentials:true})
+	try {const response = await axios.post(`https://imdb-clone-backend-w6o0.onrender.com/api/users/register`,userData,{withCredentials:true})
 	if(response.statusText === "OK"){
 		toast.success("User Registered Successfully")
 	}
@@ -24,7 +24,7 @@ export const registerUser = async (userData) => {
 export const loginUser = async (userData) => {
 	try {
 	  const response = await axios.post(
-		`${BACKEND_URL}/api/users/login`,
+		`https://imdb-clone-backend-w6o0.onrender.com/api/users/login`,
 		userData,{withCredentials:true}
 	  );
 	  if (response.statusText === "OK") {
@@ -43,7 +43,7 @@ export const loginUser = async (userData) => {
   // Logout User
 export const logoutUser = async () => {
 	try {
-	  await axios.get(`${BACKEND_URL}api/users/logout`);
+	  await axios.get(`https://imdb-clone-backend-w6o0.onrender.com/api/users/logout`);
   
 	} catch (error) {
 	  const message =
