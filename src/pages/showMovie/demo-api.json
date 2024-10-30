@@ -1,0 +1,498 @@
+{
+    "actors": [
+        {
+            "id": 1,
+            "name": "Leonardo DiCaprio",
+            "gender": "Male",
+            "dob": "1974-11-11",
+            "bio": "An American actor, producer, and environmentalist.",
+            "image": "https://example.com/leonardo.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Kate Winslet",
+            "gender": "Female",
+            "dob": "1975-10-05",
+            "bio": "An English actress and singer known for her work in independent films.",
+            "image": "https://example.com/kate.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Brad Pitt",
+            "gender": "Male",
+            "dob": "1963-12-18",
+            "bio": "An American actor and film producer.",
+            "image": "https://example.com/brad.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Angelina Jolie",
+            "gender": "Female",
+            "dob": "1975-06-04",
+            "bio": "An American actress, filmmaker, and humanitarian.",
+            "image": "https://example.com/angelina.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Johnny Depp",
+            "gender": "Male",
+            "dob": "1963-06-09",
+            "bio": "An American actor, producer, and musician.",
+            "image": "https://example.com/johnny.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Meryl Streep",
+            "gender": "Female",
+            "dob": "1949-06-22",
+            "bio": "An American actress, known for her versatility and accent adaptation.",
+            "image": "https://example.com/meryl.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Tom Hanks",
+            "gender": "Male",
+            "dob": "1956-07-09",
+            "bio": "An American actor and filmmaker.",
+            "image": "https://example.com/tom.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Scarlett Johansson",
+            "gender": "Female",
+            "dob": "1984-11-22",
+            "bio": "An American actress and singer.",
+            "image": "https://example.com/scarlett.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Will Smith",
+            "gender": "Male",
+            "dob": "1968-09-25",
+            "bio": "An American actor, producer, and rapper.",
+            "image": "https://example.com/will.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Robert Downey Jr.",
+            "gender": "Male",
+            "dob": "1965-04-04",
+            "bio": "An American actor and producer.",
+            "image": "https://example.com/robert.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Tom Cruise",
+            "gender": "Male",
+            "dob": "1962-07-03",
+            "bio": "An American actor and producer.",
+            "image": "https://example.com/tom_cruise.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Jennifer Lawrence",
+            "gender": "Female",
+            "dob": "1990-08-15",
+            "bio": "An American actress.",
+            "image": "https://example.com/jennifer.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Chris Hemsworth",
+            "gender": "Male",
+            "dob": "1983-08-11",
+            "bio": "An Australian actor.",
+            "image": "https://example.com/chris.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Emma Stone",
+            "gender": "Female",
+            "dob": "1988-11-06",
+            "bio": "An American actress.",
+            "image": "https://example.com/emma.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Hugh Jackman",
+            "gender": "Male",
+            "dob": "1968-10-12",
+            "bio": "An Australian actor, singer, and producer.",
+            "image": "https://example.com/hugh.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Natalie Portman",
+            "gender": "Female",
+            "dob": "1981-06-09",
+            "bio": "An Israeli-American actress, producer, and director.",
+            "image": "https://example.com/natalie.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Ryan Gosling",
+            "gender": "Male",
+            "dob": "1980-11-12",
+            "bio": "A Canadian actor and musician.",
+            "image": "https://example.com/ryan.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Gal Gadot",
+            "gender": "Female",
+            "dob": "1985-04-30",
+            "bio": "An Israeli actress and model.",
+            "image": "https://example.com/gal.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Mark Ruffalo",
+            "gender": "Male",
+            "dob": "1967-11-22",
+            "bio": "An American actor and producer.",
+            "image": "https://example.com/mark.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Anne Hathaway",
+            "gender": "Female",
+            "dob": "1982-11-12",
+            "bio": "An American actress.",
+            "image": "https://example.com/anne.jpg"
+        },
+        {
+            "id": 21,
+            "name": "Keanu Reeves",
+            "gender": "Male",
+            "dob": "1964-09-02",
+            "bio": "A Canadian actor, producer, and musician.",
+            "image": "https://example.com/keanu.jpg"
+        },
+        {
+            "id": 22,
+            "name": "Denzel Washington",
+            "gender": "Male",
+            "dob": "1954-12-28",
+            "bio": "An American actor, director, and producer.",
+            "image": "https://example.com/denzel.jpg"
+        },
+        {
+            "id": 23,
+            "name": "Sandra Bullock",
+            "gender": "Female",
+            "dob": "1964-07-26",
+            "bio": "An American actress and producer.",
+            "image": "https://example.com/sandra.jpg"
+        },
+        {
+            "id": 24,
+            "name": "Halle Berry",
+            "gender": "Female",
+            "dob": "1966-08-14",
+            "bio": "An American actress and former beauty queen.",
+            "image": "https://example.com/halle.jpg"
+        },
+        {
+            "id": 25,
+            "name": "Charlize Theron",
+            "gender": "Female",
+            "dob": "1975-08-07",
+            "bio": "A South African-American actress and producer.",
+            "image": "https://example.com/charlize.jpg"
+        }
+    ],
+    "producers": [
+        {
+            "id": 1,
+            "name": "James Cameron",
+            "gender": "Male",
+            "dob": "1954-08-16",
+            "bio": "A Canadian filmmaker and inventor.",
+            "image": "https://example.com/james_cameron.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Christopher Nolan",
+            "gender": "Male",
+            "dob": "1970-07-30",
+            "bio": "A British-American film director, producer, and screenwriter.",
+            "image": "https://example.com/christopher.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Steven Spielberg",
+            "gender": "Male",
+            "dob": "1946-12-18",
+            "bio": "An American film director, producer, and screenwriter.",
+            "image": "https://example.com/steven.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Quentin Tarantino",
+            "gender": "Male",
+            "dob": "1963-03-27",
+            "bio": "An American film director, producer, screenwriter, and actor.",
+            "image": "https://example.com/quentin.jpg"
+        },
+        {
+            "id": 5,
+            "name": "J.J. Abrams",
+            "gender": "Male",
+            "dob": "1966-06-27",
+            "bio": "An American filmmaker, screenwriter, producer, and director.",
+            "image": "https://example.com/jj.jpg"
+        }
+    ],
+    "movies": [
+        {
+            "id": 1,
+            "name": "Titanic",
+            "yearOfRelease": 1997,
+            "plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+            "poster": "https://example.com/titanic.jpg",
+            "producerId": 1,
+            "actorIds": [1, 2],
+            "image": "https://example.com/titanic_poster.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Inception",
+            "yearOfRelease": 2010,
+            "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+            "poster": "https://example.com/inception.jpg",
+            "producerId": 2,
+            "actorIds": [1, 3],
+            "image": "https://example.com/inception_poster.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Mr. & Mrs. Smith",
+            "yearOfRelease": 2005,
+            "plot": "A married couple discovers that they are both assassins and are assigned to kill each other.",
+            "poster": "https://example.com/mr-and-mrs-smith.jpg",
+            "producerId": 1,
+            "actorIds": [3, 4],
+            "image": "https://example.com/mr_and_mrs_smith_poster.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Avatar",
+            "yearOfRelease": 2009,
+            "plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+            "poster": "https://example.com/avatar.jpg",
+            "producerId": 1,
+            "actorIds": [1, 4],
+            "image": "https://example.com/avatar_poster.jpg"
+        },
+        {
+            "id": 5,
+            "name": "The Dark Knight",
+            "yearOfRelease": 2008,
+            "plot": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+            "poster": "https://example.com/dark_knight.jpg",
+            "producerId": 2,
+            "actorIds": [3, 1],
+            "image": "https://example.com/dark_knight_poster.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Forrest Gump",
+            "yearOfRelease": 1994,
+            "plot": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold through the perspective of an Alabama man with an extraordinary gift for running.",
+            "poster": "https://example.com/forrest_gump.jpg",
+            "producerId": 3,
+            "actorIds": [7],
+            "image": "https://example.com/forrest_gump_poster.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Pulp Fiction",
+            "yearOfRelease": 1994,
+            "plot": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+            "poster": "https://example.com/pulp_fiction.jpg",
+            "producerId": 4,
+            "actorIds": [3, 4],
+            "image": "https://example.com/pulp_fiction_poster.jpg"
+        },
+        {
+            "id": 8,
+            "name": "The Shawshank Redemption",
+            "yearOfRelease": 1994,
+            "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+            "poster": "https://example.com/shawshank_redemption.jpg",
+            "producerId": 3,
+            "actorIds": [1, 7],
+            "image": "https://example.com/shawshank_redemption_poster.jpg"
+        },
+        {
+            "id": 9,
+            "name": "The Matrix",
+            "yearOfRelease": 1999,
+            "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+            "poster": "https://example.com/matrix.jpg",
+            "producerId": 5,
+            "actorIds": [3, 4],
+            "image": "https://example.com/matrix_poster.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Gladiator",
+            "yearOfRelease": 2000,
+            "plot": "A former Roman general sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+            "poster": "https://example.com/gladiator.jpg",
+            "producerId": 1,
+            "actorIds": [3, 4],
+            "image": "https://example.com/gladiator_poster.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Jurassic Park",
+            "yearOfRelease": 1993,
+            "plot": "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
+            "poster": "https://example.com/jurassic_park.jpg",
+            "producerId": 3,
+            "actorIds": [3, 5],
+            "image": "https://example.com/jurassic_park_poster.jpg"
+        },
+        {
+            "id": 12,
+            "name": "The Lion King",
+            "yearOfRelease": 1994,
+            "plot": "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.",
+            "poster": "https://example.com/lion_king.jpg",
+            "producerId": 3,
+            "actorIds": [1, 4],
+            "image": "https://example.com/lion_king_poster.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Black Panther",
+            "yearOfRelease": 2018,
+            "plot": "T'Challa, the King of Wakanda, must defend his land from being torn apart by enemies from outside and within.",
+            "poster": "https://example.com/black_panther.jpg",
+            "producerId": 1,
+            "actorIds": [3, 4],
+            "image": "https://example.com/black_panther_poster.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Frozen",
+            "yearOfRelease": 2013,
+            "plot": "When their kingdom becomes trapped in an eternal winter, fearless Anna teams up with rugged mountain man Kristoff and his loyal reindeer Sven to find her sister Elsa, whose icy powers trapped their kingdom.",
+            "poster": "https://example.com/frozen.jpg",
+            "producerId": 2,
+            "actorIds": [6, 7],
+            "image": "https://example.com/frozen_poster.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Finding Nemo",
+            "yearOfRelease": 2003,
+            "plot": "A clown fish named Marlin is overly cautious with his son Nemo, so when Nemo is unexpectedly captured, Marlin must venture out into the ocean to find him.",
+            "poster": "https://example.com/finding_nemo.jpg",
+            "producerId": 3,
+            "actorIds": [1, 4],
+            "image": "https://example.com/finding_nemo_poster.jpg"
+        },
+        {
+            "id": 16,
+            "name": "The Godfather",
+            "yearOfRelease": 1972,
+            "plot": "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
+            "poster": "https://example.com/godfather.jpg",
+            "producerId": 5,
+            "actorIds": [3, 6],
+            "image": "https://example.com/godfather_poster.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Star Wars: Episode IV - A New Hope",
+            "yearOfRelease": 1977,
+            "plot": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee, and a princess to save the galaxy from a mysterious villain.",
+            "poster": "https://example.com/star_wars.jpg",
+            "producerId": 3,
+            "actorIds": [1, 2],
+            "image": "https://example.com/star_wars_poster.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Spider-Man: Homecoming",
+            "yearOfRelease": 2017,
+            "plot": "Peter Parker balances his life as an ordinary high school student in Queens with his secret identity as Spider-Man.",
+            "poster": "https://example.com/spiderman.jpg",
+            "producerId": 2,
+            "actorIds": [1, 3],
+            "image": "https://example.com/spiderman_poster.jpg"
+        },
+        {
+            "id": 19,
+            "name": "The Avengers",
+            "yearOfRelease": 2012,
+            "plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army.",
+            "poster": "https://example.com/avengers.jpg",
+            "producerId": 1,
+            "actorIds": [3, 4],
+            "image": "https://example.com/avengers_poster.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Guardians of the Galaxy",
+            "yearOfRelease": 2014,
+            "plot": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
+            "poster": "https://example.com/guardians_of_the_galaxy.jpg",
+            "producerId": 1,
+            "actorIds": [2, 4],
+            "image": "https://example.com/guardians_of_the_galaxy_poster.jpg"
+        },
+        {
+            "id": 21,
+            "name": "Django Unchained",
+            "yearOfRelease": 2012,
+            "plot": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+            "poster": "https://example.com/django.jpg",
+            "producerId": 4,
+            "actorIds": [1, 3],
+            "image": "https://example.com/django_poster.jpg"
+        },
+        {
+            "id": 22,
+            "name": "Interstellar",
+            "yearOfRelease": 2014,
+            "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+            "poster": "https://example.com/interstellar.jpg",
+            "producerId": 2,
+            "actorIds": [1, 4],
+            "image": "https://example.com/interstellar_poster.jpg"
+        },
+        {
+            "id": 23,
+            "name": "The Lord of the Rings: The Return of the King",
+            "yearOfRelease": 2003,
+            "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to save Middle-earth.",
+            "poster": "https://example.com/lord_of_the_rings.jpg",
+            "producerId": 1,
+            "actorIds": [3, 5],
+            "image": "https://example.com/lord_of_the_rings_poster.jpg"
+        },
+        {
+            "id": 24,
+            "name": "Coco",
+            "yearOfRelease": 2017,
+            "plot": "A boy named Miguel dreams of becoming a musician and finds himself in the Land of the Dead.",
+            "poster": "https://example.com/coco.jpg",
+            "producerId": 3,
+            "actorIds": [6, 5],
+            "image": "https://example.com/coco_poster.jpg"
+        },
+        {
+            "id": 25,
+            "name": "The Silence of the Lambs",
+            "yearOfRelease": 1991,
+            "plot": "A young FBI cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer.",
+            "poster": "https://example.com/silence_of_the_lambs.jpg",
+            "producerId": 5,
+            "actorIds": [2, 7],
+            "image": "https://example.com/silence_of_the_lambs_poster.jpg"
+        }
+    ]
+}

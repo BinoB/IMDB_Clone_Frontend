@@ -29,11 +29,17 @@ export default Home */
 
 import React from 'react'
 import Navbar from '../navbar/Navbar'
+import MovieCard from '../showMovie/MovieCard'
+import Movie from '../showMovie/Movie'
+import Footer from '../../components/footer/Footer'
 
 const Home = () => {
   return (
     <div>
       <Navbar/>
+      {/* <MovieCard/> */}
+      <Movie/>
+      {/* <Footer/> */}
     </div>
   )
 }

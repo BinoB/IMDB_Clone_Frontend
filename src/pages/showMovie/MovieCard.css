@@ -1,0 +1,43 @@
+.movie-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;
+    background-color: #fff;
+    text-align: center;
+    margin: 16px;
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.movie-plot {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.movie-details {
+    margin-top: 16px;
+}
+
+.producer, .actor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.producer-image, .actor-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}

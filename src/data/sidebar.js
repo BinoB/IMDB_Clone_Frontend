@@ -13,7 +13,7 @@ const menu = [
   {
     title: "Add Actor",
     icon: <MdRecentActors />,
-    path: "/actor",
+    path: "/addactor",
   },
   {
     title: "Add Producer",

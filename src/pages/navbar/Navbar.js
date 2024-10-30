@@ -18,19 +18,19 @@ const Navbar = () => {
         <input type="text" placeholder="Search IMDb" />
       </div>
       <div className="navbar__links">
-        <Link to="/">Movies</Link>
+        {/* <Link to="/">Movies</Link>
         <Link to="/">TV Shows</Link>
-        <Link to="/">Celebrities</Link>
+        <Link to="/">Celebrities</Link> */}
         <ShowOnLogout>
-        <Link to="/register">Register</Link>
+        {/* <Link to="/register">Register</Link> */}
         </ShowOnLogout>
         <ShowOnLogout>
-        <button className="--btn --btn-primary">
+        <button className="nav-button">
           <Link to="/login">Login</Link>
         </button>
         </ShowOnLogout>
         <ShowOnLogin>
-        <button className="--btn --btn-primary">
+        <button className="nav-button">
           <Link to="/dashboard">Dashboard</Link>
         </button>
         </ShowOnLogin>
