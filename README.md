@@ -2,6 +2,14 @@
 
 This project is the frontend application for an IMDb-like website with basic CRUD functionality for managing movies, actors, and producers. Built with React.js, it provides users with an interactive interface to view, add, edit, and delete movie records while also allowing for the dynamic creation of new actors and producers within the same view.
 
+## Deployment
+
+The application is deployed and can be accessed at the following URL:
+
+[Deployment URL](https://poetic-blancmange-b9e3a5.netlify.app)
+
+
+
 ## Project Overview
 
 ### Features
