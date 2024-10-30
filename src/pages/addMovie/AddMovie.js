@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Loader from "../../components/loader/Loader";
-import ActorForm from "../../components/actor/actorForm/ActorForm";
+import MovieForm from "../../components/movie/movieForm/MovieForm";
 import {
-  createActor,
+  createMovie,
   selectIsLoading,
-} from "../../redux/features/actor/actorSlice";
+} from "../../redux/features/movie/movieSlice";
 
 const initialState = {
   name: "",
@@ -15,21 +15,21 @@ const initialState = {
   bio: "",
 };
 
-const AddActor = () => {
+const AddMovie = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [actor, setActor] = useState(initialState);
+  const [movie, setMovie] = useState(initialState);
   const [billImage, setBillImage] = useState("");
   const [imagePreview, setImagePreview] = useState(null);
 //   const [description, setDescription] = useState("");
 
 //   const isLoading = useSelector(selectIsLoading);
 
-  const { name, gender, bio, dob } = actor;
+  const { name, gender, bio, dob } = movie;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setActor({ ...actor, [name]: value });
+    setMovie({ ...movie, [name]: value });
   };
 
   const handleImageChange = (e) => {
@@ -38,7 +38,7 @@ const AddActor = () => {
   };
 
 
-  const saveActor = async (e) => {
+  const saveMovie = async (e) => {
     e.preventDefault();
     const formData = new FormData();
     formData.append("name", name);
@@ -52,7 +52,7 @@ const AddActor = () => {
 
     console.log(...formData);
 
-    await dispatch(createActor(formData));
+    await dispatch(createMovie(formData));
 
     // navigate("/dashboard");
   };
@@ -60,19 +60,19 @@ const AddActor = () => {
   return (
     <div className="--mt1">
       {/* {isLoading && <Loader />} */}
-      {/* <h3 className="--mt">Add New Actor</h3> */}
-      <ActorForm
-        actor={actor}
+      {/* <h3 className="--mt">Add New Movie</h3> */}
+      <MovieForm
+        movie={movie}
         billImage={billImage}
         imagePreview={imagePreview}
         // description={description}
         // setDescription={setDescription}
         handleInputChange={handleInputChange}
         handleImageChange={handleImageChange}
-        saveActor={saveActor}
+        saveMovie={saveMovie}
       />
     </div>
   );
 };
 
-export default AddActor;
+export default AddMovie;

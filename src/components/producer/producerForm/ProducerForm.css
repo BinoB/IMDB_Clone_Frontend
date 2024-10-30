@@ -1,0 +1,95 @@
+.add-producer {
+	margin-bottom: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .add-producer .card {
+	width: 100%;
+	max-width: 600px; /* Increased width for a spacious layout */
+	padding: 2rem; /* Increased padding for better spacing */
+	border-radius: 20px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .form-title {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 2rem;
+	color: var(--color-dark);
+  }
+  
+  .add-producer form label {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--color-dark);
+	margin-bottom: 0.5rem; /* Added margin for spacing */
+  }
+  
+  .add-producer form input[type="text"],
+  .add-producer form input[type="date"],
+  .add-producer form textarea,
+  .add-producer form input[type="file"] {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 300;
+	padding: 1rem;
+	margin: 1rem 0; /* Adjusted margin for spacing */
+	width: 100%;
+	border: 1px solid #cccccc; /* Lighter border for subtle contrast */
+	border-radius: 8px; /* More rounded corners */
+	outline: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for inputs */
+	transition: border 0.3s; /* Smooth transition for border */
+  }
+  
+  .add-producer form input[type="text"]:focus,
+  .add-producer form input[type="date"]:focus,
+  .add-producer form textarea:focus {
+	border: 1px solid var(--color-dark); /* Darker border on focus */
+  }
+  
+  .add-producer form textarea {
+	height: 100px; /* Fixed height for textarea */
+	resize: none; /* Prevent resizing */
+  }
+  
+  .image-preview {
+	width: 100%;
+	max-height: 280px;
+	background: var(--dark-blue);
+	padding: 1rem;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: all 0.3s;
+	margin: 1rem 0; /* Added margin for spacing */
+  }
+  
+  .image-preview img {
+	width: 100%;
+	border-radius: 8px; /* Rounded corners for images */
+  }
+  
+  .--my {
+	display: flex;
+	justify-content: center; /* Centered button */
+  }
+  
+  .--btn {
+	background-color: #24b8cf; /* Use CSS variable for button color */
+	color: #ffffff; /* Button text color */
+	border: none;
+	border-radius: 20px; /* Rounded button */
+	padding: 0.8rem 2rem; /* Increased padding for button */
+	font-size: 1.6rem;
+	cursor: pointer;
+	transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .--btn:hover {
+	background-color: var(--btn-bg-color-hover); /* Darker shade on hover */
+  }
+  

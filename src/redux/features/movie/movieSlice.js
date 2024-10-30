@@ -1,11 +1,11 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { toast } from "react-toastify";
-import producerService from "./producerService";
+import movieService from "./movieService";
 
 
 const initialState = {
-  producer: null,
-  producers: [],
+  movie: null,
+  movies: [],
   isError: false,
   isSuccess: false,
   isLoading: false,
@@ -14,12 +14,12 @@ const initialState = {
   category: [],
 }; 
 
-// Create New Producer
-export const createProducer = createAsyncThunk(
-  "producers/create",
+// Create New Movie
+export const createMovie = createAsyncThunk(
+  "movies/create",
   async (formData, thunkAPI) => {
     try {
-      return await producerService.createProducer(formData);
+      return await movieService.createMovie(formData);
     } catch (error) {
       const message =
         (error.response &&
@@ -33,12 +33,12 @@ export const createProducer = createAsyncThunk(
   }
 );
 
-// Get all producers
-export const getProducers = createAsyncThunk(
-  "producers/getAll",
+// Get all movies
+export const getMovies = createAsyncThunk(
+  "movies/getAll",
   async (_, thunkAPI) => {
     try {
-      return await producerService.getProducers();
+      return await movieService.getMovies();
     } catch (error) {
       const message =
         (error.response &&
@@ -52,12 +52,12 @@ export const getProducers = createAsyncThunk(
   }
 );
 
-// Delete a Producer
-export const deleteProducer = createAsyncThunk(
-  "producers/delete",
+// Delete a Movie
+export const deleteMovie = createAsyncThunk(
+  "movies/delete",
   async (id, thunkAPI) => {
     try {
-      return await producerService.deleteProducer(id);
+      return await movieService.deleteMovie(id);
     } catch (error) {
       const message =
         (error.response &&
@@ -71,12 +71,12 @@ export const deleteProducer = createAsyncThunk(
   }
 );
 
-// Get a producer
-export const getProducer = createAsyncThunk(
-  "producers/getProducer",
+// Get a movie
+export const getMovie = createAsyncThunk(
+  "movies/getMovie",
   async (id, thunkAPI) => {
     try {
-      return await producerService.getProducer(id);
+      return await movieService.getMovie(id);
     } catch (error) {
       const message =
         (error.response &&
@@ -89,12 +89,12 @@ export const getProducer = createAsyncThunk(
     }
   }
 );
-// Update producer
-export const updateProducer = createAsyncThunk(
-  "producers/updateProducer",
+// Update movie
+export const updateMovie = createAsyncThunk(
+  "movies/updateMovie",
   async ({ id, formData }, thunkAPI) => {
     try {
-      return await producerService.updateProducer(id, formData);
+      return await movieService.updateMovie(id, formData);
     } catch (error) {
       const message =
         (error.response &&
@@ -108,85 +108,85 @@ export const updateProducer = createAsyncThunk(
   }
 );
 
-const producerSlice = createSlice({
-  name: "producer",
+const movieSlice = createSlice({
+  name: "movie",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(createProducer.pending, (state) => {
+      .addCase(createMovie.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(createProducer.fulfilled, (state, action) => {
+      .addCase(createMovie.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
         console.log(action.payload);
-        state.producers.push(action.payload);
-        toast.success("Producer added successfully");
+        state.movies.push(action.payload);
+        toast.success("Movie added successfully");
       })
-      .addCase(createProducer.rejected, (state, action) => {
+      .addCase(createMovie.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
       })
-      .addCase(getProducers.pending, (state) => {
+      .addCase(getMovies.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getProducers.fulfilled, (state, action) => {
+      .addCase(getMovies.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
         console.log(action.payload);
-        state.producers = action.payload;
+        state.movies = action.payload;
       })
-      .addCase(getProducers.rejected, (state, action) => {
+      .addCase(getMovies.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
       })
-      .addCase(deleteProducer.pending, (state) => {
+      .addCase(deleteMovie.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(deleteProducer.fulfilled, (state, action) => {
+      .addCase(deleteMovie.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
-        toast.success("Producer deleted successfully");
+        toast.success("Movie deleted successfully");
       })
-      .addCase(deleteProducer.rejected, (state, action) => {
+      .addCase(deleteMovie.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
       })
-      .addCase(getProducer.pending, (state) => {
+      .addCase(getMovie.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getProducer.fulfilled, (state, action) => {
+      .addCase(getMovie.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
-        state.producer = action.payload;
+        state.movie = action.payload;
       })
-      .addCase(getProducer.rejected, (state, action) => {
+      .addCase(getMovie.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
       })
-      .addCase(updateProducer.pending, (state) => {
+      .addCase(updateMovie.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(updateProducer.fulfilled, (state, action) => {
+      .addCase(updateMovie.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
-        toast.success("Producer updated successfully");
+        toast.success("Movie updated successfully");
       })
-      .addCase(updateProducer.rejected, (state, action) => {
+      .addCase(updateMovie.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
@@ -195,7 +195,7 @@ const producerSlice = createSlice({
   },
 });
 
-export const selectIsLoading = (state) => state.producer.isLoading;
-export const selectProducer = (state) => state.producer.producer;
+export const selectIsLoading = (state) => state.movie.isLoading;
+export const selectMovie = (state) => state.movie.movie;
 
-export default producerSlice.reducer;
+export default movieSlice.reducer;

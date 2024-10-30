@@ -16,6 +16,8 @@ import { SET_LOGIN } from "./redux/features/auth/authSlice";
 import { getLoginStatus } from "./services/authService";
 import AddActor from "./pages/addActor/AddActor";
 import Profile from "./pages/profile/Profile";
+import AddProducer from "./pages/addProducer/AddProducer";
+import AddMovie from "./pages/addMovie/AddMovie";
 
 axios.defaults.withCredentials = true;
 
@@ -50,6 +52,20 @@ function App() {
             <Sidebar>
               <Layout>
               <AddActor />
+              </Layout>
+            </Sidebar>
+          } />
+          <Route path="/addproducer" element={
+            <Sidebar>
+              <Layout>
+              <AddProducer />
+              </Layout>
+            </Sidebar>
+          } />
+          <Route path="/addmovie" element={
+            <Sidebar>
+              <Layout>
+              <AddMovie />
               </Layout>
             </Sidebar>
           } />

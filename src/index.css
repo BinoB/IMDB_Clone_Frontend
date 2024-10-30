@@ -240,6 +240,9 @@ p {
 .--mt {
   margin-top: 1rem;
 }
+.--mt1 {
+  margin-top: 3rem;
+}
 
 .--my {
   margin: 1rem 0;

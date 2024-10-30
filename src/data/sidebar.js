@@ -8,7 +8,7 @@ const menu = [
   {
     title: "Add Movie",
     icon: <BiCameraMovie />,
-    path: "/movie",
+    path: "/addmovie",
   },
   {
     title: "Add Actor",
@@ -18,7 +18,7 @@ const menu = [
   {
     title: "Add Producer",
     icon: <MdOutlineRecentActors />,
-    path: "/producer",
+    path: "/addproducer",
   },
 
   {
