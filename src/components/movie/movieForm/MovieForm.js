@@ -4,15 +4,15 @@ import "./MovieForm.css";
 
 const MovieForm = ({
   movie,
-  movieImage,
+  posterImage,
   imagePreview,
   handleInputChange,
   handleImageChange,
   saveMovie,
 }) => {
   const validateForm = () => {
-    if (!movie.name || !movie.dob || !movie.bio) {
-      alert("Please fill in all required fields: Name, Date of Birth, Bio");
+    if (!movie.name || !movie.yearOfRelease || !movie.plot || !movie.poster || !movie.actors || !movie.producer) {
+      alert("Please fill in all required fields: Movie Name, Year of Release, Plot, Poster URL, Actors, and Producer");
       return false;
     }
     return true;
@@ -41,30 +41,31 @@ const MovieForm = ({
             autoComplete="off"
           />
 
-          {/* <label>Gender:</label>
-          <input
-            type="text"
-            placeholder="Movie Gender"
-            name="gender"
-            value={movie?.gender || ""}
-            onChange={handleInputChange}
-            autoComplete="off"
-          /> */}
-
           <label>Year Of Release:</label>
           <input
-            type="date"
-            name="dob"
-            value={movie?.dob || ""}
+            type="number"
+            placeholder="Year of release"
+            name="yearOfRelease"
+            value={movie?.yearOfRelease || ""}
             onChange={handleInputChange}
             autoComplete="off"
           />
 
-          <label>Bio:</label>
+          <label>Plot:</label>
           <textarea
-            placeholder="Bio"
-            name="bio"
-            value={movie?.bio || ""}
+            placeholder="Plot"
+            name="plot"
+            value={movie?.plot || ""}
+            onChange={handleInputChange}
+            autoComplete="off"
+          />
+
+          <label>Poster URL:</label>
+          <input
+            type="text"
+            placeholder="Poster URL"
+            name="poster"
+            value={movie?.poster || ""}
             onChange={handleInputChange}
             autoComplete="off"
           />
@@ -77,17 +78,37 @@ const MovieForm = ({
             <input
               type="file"
               name="image"
-              onChange={(e) => handleImageChange(e)}
+              onChange={handleImageChange}
             />
           </div>
 
           {imagePreview != null ? (
             <div className="image-preview">
-              <img src={imagePreview} alt="product" />
+              <img src={imagePreview} alt="movie image preview" />
             </div>
           ) : (
-            <p>No image set for this Expense.</p>
+            <p>No image set for this movie.</p>
           )}
+
+          <label>Actors (Comma-separated IDs):</label>
+          <input
+            type="text"
+            placeholder="Actor IDs"
+            name="actors"
+            value={movie?.actors || ""}
+            onChange={handleInputChange}
+            autoComplete="off"
+          />
+
+          <label>Producer ID:</label>
+          <input
+            type="text"
+            placeholder="Producer ID"
+            name="producer"
+            value={movie?.producer || ""}
+            onChange={handleInputChange}
+            autoComplete="off"
+          />
 
           <div className="--my">
             <button

@@ -1,3 +1,5 @@
+// Updated AddMovie Component
+
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -10,22 +12,21 @@ import {
 
 const initialState = {
   name: "",
-  gender: "",
-  dob: "",
-  bio: "",
+  yearOfRelease: "",
+  plot: "",
+  poster: "",
+  actors: "", // Will be a comma-separated string to split into an array
+  producer: "",
 };
 
 const AddMovie = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [movie, setMovie] = useState(initialState);
-  const [billImage, setBillImage] = useState("");
+  const [posterImage, setPosterImage] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
-//   const [description, setDescription] = useState("");
 
-//   const isLoading = useSelector(selectIsLoading);
-
-  const { name, gender, bio, dob } = movie;
+  const { name, yearOfRelease, plot, poster, actors, producer } = movie;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -33,40 +34,35 @@ const AddMovie = () => {
   };
 
   const handleImageChange = (e) => {
-    setBillImage(e.target.files[0]);
-    setImagePreview(URL.createObjectURL(e.target.files[0]));
+    const file = e.target.files[0];
+    setPosterImage(file);
+    setImagePreview(URL.createObjectURL(file));
   };
-
 
   const saveMovie = async (e) => {
     e.preventDefault();
     const formData = new FormData();
     formData.append("name", name);
-    formData.append("gender", gender);
-    // formData.append("dob", Number(dob));
-	formData.append("dob", dob);
-
-    formData.append("bio", bio);
-    // formData.append("description", description);
-    formData.append("image", billImage);
+    formData.append("yearOfRelease", Number(yearOfRelease));
+    formData.append("plot", plot);
+    formData.append("poster", posterImage);
+    formData.append("actors", actors.split(",").map((id) => id.trim()));
+    formData.append("producer", producer);
 
     console.log(...formData);
 
     await dispatch(createMovie(formData));
 
-    // navigate("/dashboard");
+    navigate("/dashboard");
   };
 
   return (
     <div className="--mt1">
-      {/* {isLoading && <Loader />} */}
-      {/* <h3 className="--mt">Add New Movie</h3> */}
+      <h3 className="--mt">Add New Movie</h3>
       <MovieForm
         movie={movie}
-        billImage={billImage}
+        posterImage={posterImage}
         imagePreview={imagePreview}
-        // description={description}
-        // setDescription={setDescription}
         handleInputChange={handleInputChange}
         handleImageChange={handleImageChange}
         saveMovie={saveMovie}

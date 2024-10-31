@@ -93,3 +93,18 @@
 	background-color: var(--btn-bg-color-hover); /* Darker shade on hover */
   }
   
+
+  .add-actor {
+	margin-bottom: 5rem;
+	display: flex;
+	flex-direction: column; /* Changed to column direction */
+	align-items: center;
+  }
+  
+  .actor-list-container {
+	width: 100%;
+	margin-top: 2rem; /* Space between form and list */
+  }
+  
+  /* Existing styles remain unchanged... */
+  

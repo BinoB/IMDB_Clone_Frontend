@@ -1,70 +1,70 @@
-.actor-list {
+.producer-list {
 	color: #333;
   }
   
-  .actor-list .table {
+  .producer-list .table {
 	padding: 5px;
 	width: 100%;
 	overflow-x: auto;
   }
   
-  .actor-list .table .search {
+  .producer-list .table .search {
 	width: 100%;
 	max-width: 300px;
   }
   
-  .actor-list .table .Search_search__PQsNp input[type="text"] {
+  .producer-list .table .Search_search__PQsNp input[type="text"] {
 	box-shadow: 2px 2px 5px #BABECC;
 	border-radius: 20px;
 	border-color: #fff;
   }
   
-  .actor-list .table table {
+  .producer-list .table table {
 	border-collapse: collapse;
 	width: 100%;
 	font-size: 1.4rem;
   }
   
-  .actor-list .table table thead {
+  .producer-list .table table thead {
 	border-top: 2px solid var(--color-orange);
 	border-bottom: 2px solid var(--color-orange);
   }
   
-  .actor-list .table table th {
+  .producer-list .table table th {
 	border: 1px solid #eee;
   }
   
-  .actor-list .table table th,
-  .actor-list .table table td {
+  .producer-list .table table th,
+  .producer-list .table table td {
 	vertical-align: top;
 	text-align: left;
 	padding: 8px;
   }
   
-  .actor-list .table table th.icons,
-  .actor-list .table table td.icons {
+  .producer-list .table table th.icons,
+  .producer-list .table table td.icons {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
   }
   
-  .actor-list .table table th.icons > *,
-  .actor-list .table table td.icons > * {
+  .producer-list .table table th.icons > *,
+  .producer-list .table table td.icons > * {
 	margin-right: 7px;
 	cursor: pointer;
 	vertical-align: middle;
 	align-self: center;
   }
   
-  .actor-list .table table tr {
+  .producer-list .table table tr {
 	border-bottom: 1px solid #ccc;
   }
   
-  .actor-list .table table tr:nth-child(even) {
+  .producer-list .table table tr:nth-child(even) {
 	background-color: #fff;
   }
   
-  .actor-list .table table tbody tr:hover {
+  .producer-list .table table tbody tr:hover {
 	cursor: pointer;
 	background-color: rgba(212, 212, 212, 0.3);
   }
@@ -80,3 +80,17 @@
 	border-color: #fff;
   }
   
+
+  .add-actor {
+	margin-bottom: 5rem;
+	display: flex;
+	flex-direction: column; /* Changed to column direction */
+	align-items: center;
+  }
+  
+  .actor-list-container {
+	width: 100%;
+	margin-top: 2rem; /* Space between form and list */
+  }
+  
+  /* Existing styles remain unchanged... */

@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../../card/Card";
 import "./ProducerForm.css";
+import ProducerList from "../producerList/ProducerList";
 
 const ProducerForm = ({
   producer,
@@ -99,6 +100,9 @@ const ProducerForm = ({
           </div>
         </form>
       </Card>
+      <div className="actor-list-container">
+        <ProducerList />
+      </div>
     </div>
   );
 };

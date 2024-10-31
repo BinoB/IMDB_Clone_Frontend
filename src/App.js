@@ -18,6 +18,7 @@ import AddActor from "./pages/addActor/AddActor";
 import Profile from "./pages/profile/Profile";
 import AddProducer from "./pages/addProducer/AddProducer";
 import AddMovie from "./pages/addMovie/AddMovie";
+import ActorList from "./components/actor/actorList/ActorList";
 
 axios.defaults.withCredentials = true;
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/actorlist" element={<ActorList />} />
         <Route
           path="/dashboard"
           element={
